@@ -23,23 +23,34 @@ Christopher Calvin Wijaya     182410103060
 # Progress Kelompok
 <br>
 <br>
+Tanggal         : 28 Oktober 2020 
 Progress 1      : Pembuatan Kerangka App & Pembuatan Page Detail (Tentang Kami)
 <br>
+Tanggal         : 
 Progress 2      : 
 <br>
+Tanggal         : 
 Progress 3      : 
 <br>
+Tanggal         : 
 Progress 4      : 
 <br>
+Tanggal         : 
 Progress 5      : 
 <br>
+Tanggal         : 
 Progress 6      : 
 <br>
+Tanggal         : 
 Progress 7      : 
 <br>
+Tanggal         : 
 Progress 8      : 
 <br>
+Tanggal         : 
 Progress 9      : 
 <br>
+Tanggal         : 
 Progress 10     : 
 
+#END
