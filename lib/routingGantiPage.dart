@@ -14,7 +14,6 @@ class routingGantiPage{
 
   static Transition (BuildContext context, StatelessWidget pages){
     Navigator.push(context, PageTransition(
-        duration: Duration(seconds: 3),
         type: PageTransitionType.leftToRight,
         child: pages));
   }

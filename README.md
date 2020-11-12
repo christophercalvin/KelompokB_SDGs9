@@ -1,84 +1,16 @@
-# Detail Kelompok
-<br>
-<br>
-Kelas           : Pemrograman Mobile A
-<br>
-Nama Kelompok   : Kelompok B
-<br>
-SDGs 9          : Infrastruktur, Inovasi dan Industri
-<br>
-<br>
+# kulakan_store
 
-# Anggota Kelompok
-<br>
-<br>
-Natasya Roma Izzah Santri     182410103011
-<br>
-Reka Putri Puspita            182410103014
-<br>
-Christopher Calvin Wijaya     182410103060
-<br>
-<br>
+Sistem Kulakan First Hand
 
-# Progress Kelompok
-<br>
-<br>
-Tanggal         : 28 Oktober 2020
-<br>
-Progress 1      : Pembuatan Kerangka App & Pembuatan Page Detail (Tentang Kami)
-<br>
-<br>
-<br>
-Tanggal         :
-<br>
-Progress 2      : 
-<br>
-<br>
-<br>
-Tanggal         :
-<br>
-Progress 3      : 
-<br>
-<br>
-<br>
-Tanggal         : 
-<br>
-Progress 4      : 
-<br>
-<br>
-<br>
-Tanggal         : 
-<br>
-Progress 5      : 
-<br>
-<br>
-<br>
-Tanggal         : 
-<br>
-Progress 6      : 
-<br>
-<br>
-<br>
-Tanggal         : 
-<br>
-Progress 7      : 
-<br>
-<br>
-<br>
-Tanggal         : 
-<br>
-Progress 8      : 
-<br>
-<br>
-<br>
-Tanggal         : 
-<br>
-Progress 9      : 
-<br>
-<br>
-<br>
-Tanggal         : 
-<br>
-Progress 10     : 
+## Getting Started
 
-# END
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

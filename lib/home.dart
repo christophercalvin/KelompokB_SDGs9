@@ -24,9 +24,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Kulakan Store App"),
-      ),
+      // appBar: AppBar(
+      //   title: Text("Kulakan Store App"),
+      // ),
       // body: ListView.builder(
       //   itemCount:5,
       //   itemBuilder: (context, int i){
@@ -46,14 +46,14 @@ class _HomePageState extends State<HomePage> {
       //       fit: BoxFit.cover,
       //     )
       //   ),
-            Text(
-              'Kulakan Store App',
-                  style: TextStyle(fontSize: 24, fontFamily: "Serif", height: 2.0),
-            ),
-            Text('Kulakan Store App merupakan aplikasi pembelian barang industri secara firsthand.'),
-            Text('Seller dapat membeli barang di aplikasi ini dengan harga seller dan pembelian dilakukan secara grosir'),
-            Text('Kulakan Store Version : 1.0'),
-            Text('By Kelompok 2 Pemrobile Kelas A')
+      //       Text(
+      //         'Kulakan Store App',
+      //             style: TextStyle(fontSize: 24, fontFamily: "Serif", height: 2.0),
+      //       ),
+      //       Text('Kulakan Store App merupakan aplikasi pembelian barang industri secara firsthand.'),
+      //       Text('Seller dapat membeli barang di aplikasi ini dengan harga seller dan pembelian dilakukan secara grosir'),
+      //       Text('Kulakan Store Version : 1.0'),
+      //       Text('By Kelompok 2 Pemrobile Kelas A')
         ]
       ),
 
@@ -62,7 +62,7 @@ class _HomePageState extends State<HomePage> {
           child: Icon(Icons.arrow_forward_ios),
           onPressed: (){
             //GantiPage(Detail());
-            routingGantiPage.Transition(context, Detail(judul: 'Tentang Kami',));
+            routingGantiPage.Transition(context, Detail(judul: 'Dashboard',));
           }
       ),
     );
