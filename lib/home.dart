@@ -24,38 +24,23 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: Text("Kulakan Store App"),
-      // ),
-      // body: ListView.builder(
-      //   itemCount:5,
-      //   itemBuilder: (context, int i){
-      //     return GestureDetector(
-      //         onTap:(){
-      //           routingGantiPage.Transition(context, Detail(judul: 'Pembelian',));
-      //         },
-      //         child: Text("Pembelian"));
-      //   }
-      // ),
-
-      body: Column(
-          children:<Widget>[
-      //   decoration: BoxDecoration(
-      //     image: DecorationImage(
-      //       image: AssetImage('image/buy.png'),
-      //       fit: BoxFit.cover,
-      //     )
-      //   ),
-      //       Text(
-      //         'Kulakan Store App',
-      //             style: TextStyle(fontSize: 24, fontFamily: "Serif", height: 2.0),
-      //       ),
-      //       Text('Kulakan Store App merupakan aplikasi pembelian barang industri secara firsthand.'),
-      //       Text('Seller dapat membeli barang di aplikasi ini dengan harga seller dan pembelian dilakukan secara grosir'),
-      //       Text('Kulakan Store Version : 1.0'),
-      //       Text('By Kelompok 2 Pemrobile Kelas A')
-        ]
-      ),
+        body: new ListView(
+            children: <Widget>[
+              new Container(
+                  padding: new EdgeInsets.all(20.0),
+                  child: new Center(
+                      child: new Column(
+                          children: <Widget>[
+                            new Text("", style:new TextStyle(fontSize:200),),
+                            new Image(image: new NetworkImage("https://www.iconpacks.net/icons/2/free-store-icon-2017-thumb.png"), width:100),
+                            new Text("Kulakan Store", style: new TextStyle(fontSize:35.0),),
+                            new Text ("Versi Aplikasi: 1.0 ", style: new TextStyle(fontSize:10.0),)
+                          ]
+                      )
+                  )
+              )
+            ]
+        ),
 
 
       floatingActionButton: FloatingActionButton(

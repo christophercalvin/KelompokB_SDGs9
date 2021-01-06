@@ -5,20 +5,36 @@ import 'package:kulakan_store/routingGantiPage.dart';
 import 'package:page_transition/page_transition.dart';
 
 class MitraKami extends StatelessWidget {
-  final String judul;
 
-  MitraKami({this.judul});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-        title: Text(judul),
+        title: new Text("Mitra Kami"),
     ),
 
       body:new ListView(
         children: <Widget>[
           new ListMitra(gambar: "https://cdn.infobrand.id/images/img/posts/2018/07/30/danone-aqua-mengajak-masyarakat-indonesia-tebarkan-nilai-nilai-kebaikan-dalam-ajang-asian-games-2018.jpg",
-              judul: "aqua",
+              judul: "AQUA",
+              deskripsi: "AQUA adalah merek air minum dalam kemasan"),
+          new ListMitra(gambar: "https://tanobel.com/wp-content/uploads/2019/09/LOGO2.png",
+              judul: "AQUA",
+              deskripsi: "AQUA adalah merek air minum dalam kemasan"),
+          new ListMitra(gambar: "https://tanobel.com/wp-content/uploads/2019/09/LOGO2.png",
+              judul: "AQUA",
+              deskripsi: "AQUA adalah merek air minum dalam kemasan"),
+          new ListMitra(gambar: "https://tanobel.com/wp-content/uploads/2019/09/LOGO2.png",
+              judul: "AQUA",
+              deskripsi: "AQUA adalah merek air minum dalam kemasan"),
+          new ListMitra(gambar: "https://tanobel.com/wp-content/uploads/2019/09/LOGO2.png",
+              judul: "AQUA",
+              deskripsi: "AQUA adalah merek air minum dalam kemasan"),
+          new ListMitra(gambar: "https://tanobel.com/wp-content/uploads/2019/09/LOGO2.png",
+              judul: "AQUA",
+              deskripsi: "AQUA adalah merek air minum dalam kemasan"),
+          new ListMitra(gambar: "https://tanobel.com/wp-content/uploads/2019/09/LOGO2.png",
+              judul: "AQUA",
               deskripsi: "AQUA adalah merek air minum dalam kemasan"),
         ],
       )
@@ -42,14 +58,14 @@ class ListMitra extends StatelessWidget{
         child: new Center(
             child: new Row(
                 children: <Widget>[
-                  new Image(image : NetworkImage(gambar), width:80),
+                  new Image(image : NetworkImage(gambar), width:100),
                   new Container(
                     padding: new EdgeInsets.all(15.0),
                     child: new Center(
                       child: new Column(
                         children:<Widget>[
-                            new Text(judul, style: new TextStyle(fontSize:15.0),),
-                          new Text(deskripsi, style: new TextStyle(fontSize: 10.0, color: Colors.blueGrey))
+                            new Text(judul, style: new TextStyle(fontSize:30.0),),
+                          new Text(deskripsi, style: new TextStyle(fontSize: 11.0, color: Colors.blueGrey))
                         ]
                       )
                     )
