@@ -6,6 +6,8 @@ import 'package:page_transition/page_transition.dart';
 import 'package:kulakan_store/about.dart';
 import 'package:kulakan_store/SK.dart';
 import 'package:kulakan_store/calvin.dart';
+import 'package:kulakan_store/catatan_toko.dart';
+import 'package:kulakan_store/data_toko.dart';
 
 class Detail extends StatelessWidget {
   final String judul;
@@ -108,6 +110,40 @@ class MyHomePage extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) => About(),
+                  ),
+                );
+              },
+            ),
+          ),
+
+          new ListTile(
+            title: Text(
+              'Catatan Toko', style: new TextStyle(fontSize: 20.0),),
+            leading: Icon(Icons.notes_sharp , size: 50),
+            trailing: IconButton(
+              icon: Icon(Icons.arrow_forward, size: 35),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Catatan(),
+                  ),
+                );
+              },
+            ),
+          ),
+
+          new ListTile(
+            title: Text(
+              'Data Toko', style: new TextStyle(fontSize: 20.0),),
+            leading: Icon(Icons.add_business , size: 50),
+            trailing: IconButton(
+              icon: Icon(Icons.arrow_forward, size: 35),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DataToko(),
                   ),
                 );
               },
