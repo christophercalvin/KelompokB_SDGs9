@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kulakan_store/detail.dart';
 import 'package:kulakan_store/home.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.brown,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomePage()
+      home: Detail()
 );
   }
 }

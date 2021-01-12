@@ -8,6 +8,9 @@ import 'package:kulakan_store/SK.dart';
 import 'package:kulakan_store/calvin.dart';
 import 'package:kulakan_store/catatan_toko.dart';
 import 'package:kulakan_store/data_toko.dart';
+import 'package:kulakan_store/Barcode.dart';
+import 'package:kulakan_store/ScanBarcode.dart';
+import 'package:kulakan_store/MitraLokal.dart';
 
 class Detail extends StatelessWidget {
   final String judul;
@@ -54,9 +57,51 @@ class MyHomePage extends StatelessWidget {
             ),
 
             new ListTile(
-              title: new Text("Setting"),
-              trailing : new Icon(Icons.settings),
-            )
+              title: new Text("Barcode Toko Saya"),
+              trailing: IconButton(
+                icon: Icon(Icons.qr_code_outlined),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => BarcodeTokoSaya(),
+                    ),
+                  );
+                },
+              ),
+            ),
+
+            new ListTile(
+              title: new Text("Data Toko Saya"),
+              trailing: IconButton(
+                icon: Icon(Icons.storefront),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => DataToko(),
+                    ),
+                  );
+                },
+              ),
+            ),
+
+            new ListTile(
+              title: new Text("Catatan Toko Saya"),
+              trailing: IconButton(
+                icon: Icon(Icons.event_note_sharp),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Catatan(),
+                    ),
+                  );
+                },
+              ),
+            ),
+
+
           ]
         )
       ),
@@ -76,6 +121,40 @@ class MyHomePage extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) => MitraKami(),
+                  ),
+                );
+              },
+            ),
+          ),
+
+          new ListTile(
+            title: Text(
+              'Mitra Di Kotamu', style: new TextStyle(fontSize: 20.0),),
+            leading: Icon(Icons.location_on_outlined, size: 50),
+            trailing: IconButton(
+              icon: Icon(Icons.arrow_forward, size: 35),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MitraLokal(),
+                  ),
+                );
+              },
+            ),
+          ),
+
+          new ListTile(
+            title: Text(
+              'Scan QR Code', style: new TextStyle(fontSize: 20.0),),
+            leading: Icon(Icons.search , size: 50),
+            trailing: IconButton(
+              icon: Icon(Icons.arrow_forward, size: 35),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ScanBarcode(),
                   ),
                 );
               },
@@ -116,39 +195,6 @@ class MyHomePage extends StatelessWidget {
             ),
           ),
 
-          new ListTile(
-            title: Text(
-              'Catatan Toko', style: new TextStyle(fontSize: 20.0),),
-            leading: Icon(Icons.notes_sharp , size: 50),
-            trailing: IconButton(
-              icon: Icon(Icons.arrow_forward, size: 35),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Catatan(),
-                  ),
-                );
-              },
-            ),
-          ),
-
-          new ListTile(
-            title: Text(
-              'Data Toko', style: new TextStyle(fontSize: 20.0),),
-            leading: Icon(Icons.add_business , size: 50),
-            trailing: IconButton(
-              icon: Icon(Icons.arrow_forward, size: 35),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => DataToko(),
-                  ),
-                );
-              },
-            ),
-          ),
         ],
       ),
     );

@@ -17,22 +17,22 @@ class MitraKami extends StatelessWidget {
         children: <Widget>[
           new ListMitra(gambar: "https://cdn.infobrand.id/images/img/posts/2018/07/30/danone-aqua-mengajak-masyarakat-indonesia-tebarkan-nilai-nilai-kebaikan-dalam-ajang-asian-games-2018.jpg",
               judul: "AQUA",
-              deskripsi: "AQUA adalah merek air minum dalam kemasan"),
+              deskripsi: ""),
+          new ListMitra(gambar: "https://tanobel.com/wp-content/uploads/2019/09/LOGO2.png",
+              judul: "Cleo",
+              deskripsi: ""),
           new ListMitra(gambar: "https://tanobel.com/wp-content/uploads/2019/09/LOGO2.png",
               judul: "AQUA",
-              deskripsi: "AQUA adalah merek air minum dalam kemasan"),
+              deskripsi: ""),
           new ListMitra(gambar: "https://tanobel.com/wp-content/uploads/2019/09/LOGO2.png",
               judul: "AQUA",
-              deskripsi: "AQUA adalah merek air minum dalam kemasan"),
+              deskripsi: ""),
           new ListMitra(gambar: "https://tanobel.com/wp-content/uploads/2019/09/LOGO2.png",
               judul: "AQUA",
-              deskripsi: "AQUA adalah merek air minum dalam kemasan"),
+              deskripsi: ""),
           new ListMitra(gambar: "https://tanobel.com/wp-content/uploads/2019/09/LOGO2.png",
               judul: "AQUA",
-              deskripsi: "AQUA adalah merek air minum dalam kemasan"),
-          new ListMitra(gambar: "https://tanobel.com/wp-content/uploads/2019/09/LOGO2.png",
-              judul: "AQUA",
-              deskripsi: "AQUA adalah merek air minum dalam kemasan"),
+              deskripsi: ""),
           new ListMitra(gambar: "https://tanobel.com/wp-content/uploads/2019/09/LOGO2.png",
               judul: "AQUA",
               deskripsi: "AQUA adalah merek air minum dalam kemasan"),
@@ -45,7 +45,7 @@ class MitraKami extends StatelessWidget {
 
 class ListMitra extends StatelessWidget{
 
-  ListMitra({this.gambar, this.judul, this.deskripsi});
+  ListMitra({this.gambar, this.judul, this.deskripsi, String tag});
 
   final String judul;
   final String gambar;
