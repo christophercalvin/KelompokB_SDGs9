@@ -35,7 +35,13 @@ class MitraKami extends StatelessWidget {
               deskripsi: ""),
           new ListMitra(gambar: "https://tanobel.com/wp-content/uploads/2019/09/LOGO2.png",
               judul: "AQUA",
-              deskripsi: "AQUA adalah merek air minum dalam kemasan"),
+              deskripsi: ""),
+          new ListMitra(gambar: "https://ecs7.tokopedia.net/img/cache/700/product-1/2020/7/8/batch-upload/batch-upload_8fd2f31f-a0b2-46a4-9a0f-b65d419949c3",
+              judul: "Attack",
+              deskripsi: ""),
+          new ListMitra(gambar: "https://ecs7.tokopedia.net/img/cache/700/product-1/2020/7/8/batch-upload/batch-upload_8fd2f31f-a0b2-46a4-9a0f-b65d419949c3",
+              judul: "Rinso",
+              deskripsi: ""),
         ],
       )
     );

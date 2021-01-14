@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1040179008559",
+    "project_id": "kulakan-store",
+    "storage_bucket": "kulakan-store.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040179008559:android:c06cda9389f7c369b422da",
+        "android_client_info": {
+          "package_name": "com.pemromobile.kulakan_store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1040179008559-6rlo9g8g429tfdncrpv8ihb99g93j570.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDarJPAb878XkB_IKq1ujDebSI7MryAAo4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1040179008559-6rlo9g8g429tfdncrpv8ihb99g93j570.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -43,13 +43,7 @@ class _HomePageState extends State<HomePage> {
         ),
 
 
-      floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.arrow_forward_ios),
-          onPressed: (){
-            //GantiPage(Detail());
-            routingGantiPage.Transition(context, Detail(judul: 'Dashboard',));
-          }
-      ),
+
     );
   }
 }

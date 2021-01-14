@@ -11,22 +11,17 @@ import 'package:kulakan_store/data_toko.dart';
 import 'package:kulakan_store/Barcode.dart';
 import 'package:kulakan_store/ScanBarcode.dart';
 import 'package:kulakan_store/MitraLokal.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'Peta.dart';
+import 'auth_services.dart';
+import 'verifikasi.dart';
 
-class Detail extends StatelessWidget {
-  final String judul;
-
-  Detail({this.judul});
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Dashboard',
-      home: MyHomePage(),
-    );
-  }
-}
 
 class MyHomePage extends StatelessWidget {
+
+  final FirebaseUser user;
+  MyHomePage (this.user);
+
   String gambar1="https://cdn.iconscout.com/icon/free/png-512/laptop-user-1-1179329.png";
   String nama1 = "Christopher Calvin Wijaya";
   String email1 = "christopher@gmail.com";
@@ -55,6 +50,7 @@ class MyHomePage extends StatelessWidget {
               decoration: new BoxDecoration(image: new DecorationImage(image: new NetworkImage("https://discovery.sndimg.com/content/dam/images/discovery/fullset/2020/4/2/nightsky2_getty.jpg.rend.hgtvcom.616.411.suffix/1585862428885.jpeg"), fit: BoxFit.cover)
               ),
             ),
+
 
             new ListTile(
               title: new Text("Barcode Toko Saya"),
@@ -101,7 +97,28 @@ class MyHomePage extends StatelessWidget {
               ),
             ),
 
+            new ListTile(
+              title: new Text("Verifikasi pemilik"),
+              trailing: IconButton(
+                icon: Icon(Icons.camera_alt_outlined),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Verifikasi(),
+                    ),
+                  );
+                },
+              ),
+            ),
 
+            new ListTile(
+            title: new Text("ID Login anda: "+user.uid, style: new TextStyle(fontSize: 9.0))
+            ),
+
+            RaisedButton(child: Text("Log Out"),onPressed: () async{
+              await AuthServices.signOut();
+            })
           ]
         )
       ),
@@ -138,6 +155,23 @@ class MyHomePage extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) => MitraLokal(),
+                  ),
+                );
+              },
+            ),
+          ),
+
+          new ListTile(
+            title: Text(
+              'Lihat Peta', style: new TextStyle(fontSize: 20.0),),
+            leading: Icon(Icons.map_sharp, size: 50),
+            trailing: IconButton(
+              icon: Icon(Icons.arrow_forward, size: 35),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ViewPeta(),
                   ),
                 );
               },

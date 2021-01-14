@@ -9,6 +9,10 @@
         android:name="io.flutter.app.FlutterApplication"
         android:label="kulakan_store"
         android:icon="@mipmap/ic_launcher">
+
+        <meta-data android:name="com.here.sdk.access_key_id" android:value="L06hHGKcIF2ayqt46nA7eg"/>
+        <meta-data android:name="com.here.sdk.access_key_secret" android:value="kFqGWtPfE0GnEFOv9-baYp3_TPBEu2of_DoJt5EqdkRv2Dp4zMNyZMXy5iH4RRcUQ7vO1pnKEiOYixnPDeCg5g"/>
+
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
